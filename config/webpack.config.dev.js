@@ -175,12 +175,15 @@ module.exports = {
               name: 'static/media/[name].[hash:8].[ext]',
             },
           },
+          {
+            test: /\.html$/,
+            loader: require.resolve('html-loader')
+          },
           // Process application JS with Babel.
           // The preset includes JSX, Flow, and some ESnext features.
           {
             test: /\.(js|jsx|mjs)$/,
-            include: paths.srcPaths,
-            exclude: [/[/\\\\]node_modules[/\\\\]/],
+            include: [paths.srcPaths, paths.appNodeModules],
             use: [
               // This loader parallelizes code compilation, it is optional but
               // improves compile time on larger projects
@@ -203,6 +206,9 @@ module.exports = {
                         },
                       },
                     ],
+                    [
+                      require.resolve('babel-plugin-transform-object-rest-spread')
+                    ]
                   ],
                   // This is a feature of `babel-loader` for webpack (not Babel itself).
                   // It enables caching results in ./node_modules/.cache/babel-loader/
