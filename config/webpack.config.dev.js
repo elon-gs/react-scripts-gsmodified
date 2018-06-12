@@ -206,9 +206,6 @@ module.exports = {
                           },
                         },
                       },
-                    ],
-                    [
-                      require.resolve('babel-plugin-transform-object-rest-spread')
                     ]
                   ],
                   // This is a feature of `babel-loader` for webpack (not Babel itself).
