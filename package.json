@@ -1,6 +1,6 @@
 {
   "name": "react-scripts",
-  "version": "3.3.0",
+  "version": "3.4.1",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
@@ -109,6 +109,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "gitHead": "9a817dd0d780ec401afb1f99dbc0f3bdbcd51683"
+  }
 }
