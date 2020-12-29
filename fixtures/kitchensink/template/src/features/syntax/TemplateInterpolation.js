@@ -17,7 +17,7 @@ function load(name) {
   ];
 }
 
-export default class TemplateInterpolation extends Component {
+export default class extends Component {
   static propTypes = {
     onReady: PropTypes.func.isRequired,
   };

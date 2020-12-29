@@ -38,12 +38,11 @@ module.exports = (resolve, rootDir, isEjecting) => {
       '<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}',
       '<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}',
     ],
-    testEnvironment: 'jsdom',
-    testRunner: require.resolve('jest-circus/runner'),
+    testEnvironment: 'jest-environment-jsdom-fourteen',
     transform: {
-      '^.+\\.(js|jsx|mjs|cjs|ts|tsx)$': resolve(
-        'config/jest/babelTransform.js'
-      ),
+      '^.+\\.(js|jsx|mjs|cjs|ts|tsx)$': isEjecting
+        ? '<rootDir>/node_modules/babel-jest'
+        : resolve('config/jest/babelTransform.js'),
       '^.+\\.css$': resolve('config/jest/cssTransform.js'),
       '^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)': resolve(
         'config/jest/fileTransform.js'
@@ -66,7 +65,6 @@ module.exports = (resolve, rootDir, isEjecting) => {
       'jest-watch-typeahead/filename',
       'jest-watch-typeahead/testname',
     ],
-    resetMocks: true,
   };
   if (rootDir) {
     config.rootDir = rootDir;
@@ -87,7 +85,6 @@ module.exports = (resolve, rootDir, isEjecting) => {
     'resetModules',
     'restoreMocks',
     'snapshotSerializers',
-    'testMatch',
     'transform',
     'transformIgnorePatterns',
     'watchPathIgnorePatterns',

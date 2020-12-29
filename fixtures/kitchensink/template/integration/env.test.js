@@ -31,14 +31,14 @@ describe('Integration', () => {
           'production'
         );
         expect(doc.getElementById('feature-file-env-x').textContent).toBe(
-          'x-from-original-local-env'
+          'x-from-production-env'
         );
       } else {
         expect(doc.getElementById('feature-file-env').textContent).toBe(
           'development'
         );
         expect(doc.getElementById('feature-file-env-x').textContent).toBe(
-          'x-from-original-local-env'
+          'x-from-development-env'
         );
       }
     });

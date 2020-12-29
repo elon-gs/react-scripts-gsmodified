@@ -8,7 +8,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class ClassProperties extends Component {
+export default class extends Component {
   static propTypes = {
     onReady: PropTypes.func.isRequired,
   };

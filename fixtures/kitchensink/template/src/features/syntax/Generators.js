@@ -16,7 +16,7 @@ function* load(limit) {
   }
 }
 
-export default class Generators extends Component {
+export default class extends Component {
   static propTypes = {
     onReady: PropTypes.func.isRequired,
   };

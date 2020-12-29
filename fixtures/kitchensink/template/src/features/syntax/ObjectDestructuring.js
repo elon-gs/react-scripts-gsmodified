@@ -17,7 +17,7 @@ function load() {
   ];
 }
 
-export default class ObjectDestructuring extends Component {
+export default class extends Component {
   static propTypes = {
     onReady: PropTypes.func.isRequired,
   };

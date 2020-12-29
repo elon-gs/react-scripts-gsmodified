@@ -12,10 +12,8 @@ const text = aFileWithExtUnknown.includes('base64')
   ? atob(aFileWithExtUnknown.split('base64,')[1]).trim()
   : aFileWithExtUnknown;
 
-const UnknownExtInclusion = () => (
+export default () => (
   <a id="feature-unknown-ext-inclusion" href={text}>
     aFileWithExtUnknown
   </a>
 );
-
-export default UnknownExtInclusion;

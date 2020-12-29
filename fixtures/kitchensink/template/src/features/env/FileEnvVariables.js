@@ -7,7 +7,7 @@
 
 import React from 'react';
 
-const FileEnvVariables = () => (
+export default () => (
   <span>
     <span id="feature-file-env-original-1">
       {process.env.REACT_APP_ORIGINAL_1}
@@ -22,5 +22,3 @@ const FileEnvVariables = () => (
     <span id="feature-file-env-x">{process.env.REACT_APP_X}</span>
   </span>
 );
-
-export default FileEnvVariables;

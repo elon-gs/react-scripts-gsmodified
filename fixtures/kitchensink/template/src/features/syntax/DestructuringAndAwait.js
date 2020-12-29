@@ -19,7 +19,7 @@ async function load() {
   };
 }
 
-export default class DestructuringAndAwait extends Component {
+export default class extends Component {
   static propTypes = {
     onReady: PropTypes.func.isRequired,
   };

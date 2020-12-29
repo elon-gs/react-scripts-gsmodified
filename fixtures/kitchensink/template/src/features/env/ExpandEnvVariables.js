@@ -7,7 +7,7 @@
 
 import React from 'react';
 
-const ExpandEnvVariables = () => (
+export default () => (
   <span>
     <span id="feature-expand-env-1">{process.env.REACT_APP_BASIC}</span>
     <span id="feature-expand-env-2">{process.env.REACT_APP_BASIC_EXPAND}</span>
@@ -19,5 +19,3 @@ const ExpandEnvVariables = () => (
     </span>
   </span>
 );
-
-export default ExpandEnvVariables;

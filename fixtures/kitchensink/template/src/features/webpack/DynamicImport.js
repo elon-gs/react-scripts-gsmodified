@@ -7,8 +7,6 @@
 
 import React from 'react';
 
-const DynamicImport = () => {
+export default () => {
   return <>Hello World!</>;
 };
-
-export default DynamicImport;

@@ -9,7 +9,7 @@ import React from 'react';
 import styles from './assets/scss-styles.module.scss';
 import indexStyles from './assets/index.module.scss';
 
-const ScssModulesInclusion = () => (
+export default () => (
   <div>
     <p className={styles.scssModulesInclusion}>SCSS Modules are working!</p>
     <p className={indexStyles.scssModulesIndexInclusion}>
@@ -17,5 +17,3 @@ const ScssModulesInclusion = () => (
     </p>
   </div>
 );
-
-export default ScssModulesInclusion;

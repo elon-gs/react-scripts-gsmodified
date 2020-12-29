@@ -8,12 +8,10 @@
 import React from 'react';
 import { ReactComponent as Logo } from './assets/logo.svg';
 
-const SvgComponent = () => {
+export default () => {
   return <Logo id="feature-svg-component" />;
 };
 
 export const SvgComponentWithRef = React.forwardRef((props, ref) => (
   <Logo id="feature-svg-component-with-ref" ref={ref} />
 ));
-
-export default SvgComponent;

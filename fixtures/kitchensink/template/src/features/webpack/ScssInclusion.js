@@ -8,8 +8,4 @@
 import React from 'react';
 import './assets/scss-styles.scss';
 
-const ScssInclusion = () => (
-  <p id="feature-scss-inclusion">We love useless text.</p>
-);
-
-export default ScssInclusion;
+export default () => <p id="feature-scss-inclusion">We love useless text.</p>;

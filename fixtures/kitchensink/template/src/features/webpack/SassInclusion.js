@@ -8,8 +8,4 @@
 import React from 'react';
 import './assets/sass-styles.sass';
 
-const SassInclusion = () => (
-  <p id="feature-sass-inclusion">We love useless text.</p>
-);
-
-export default SassInclusion;
+export default () => <p id="feature-sass-inclusion">We love useless text.</p>;

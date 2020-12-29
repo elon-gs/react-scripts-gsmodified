@@ -8,8 +8,4 @@
 import React from 'react';
 import logo from './assets/logo.svg';
 
-const SvgInclusion = () => (
-  <img id="feature-svg-inclusion" src={logo} alt="logo" />
-);
-
-export default SvgInclusion;
+export default () => <img id="feature-svg-inclusion" src={logo} alt="logo" />;

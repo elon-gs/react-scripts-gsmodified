@@ -7,8 +7,6 @@
 
 import React from 'react';
 
-const PublicUrl = () => (
+export default () => (
   <span id="feature-public-url">{process.env.PUBLIC_URL}.</span>
 );
-
-export default PublicUrl;
